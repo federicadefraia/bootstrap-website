@@ -2468,8 +2468,8 @@ fieldset:disabled a.btn {
 .btn-primary:focus, .btn-primary.focus {
   color: #fff;
   background-color: #FBC03E;
-  border-color: #FBC03E
-  box-shadow: 0 0 0 0.2rem rgba(60, 198, 171, 0.5);
+  border-color: #FBC03E;
+  box-shadow: 0 0 0 0.2rem rgba(56, 23, 71, 0.5);
 }
 .btn-primary.disabled, .btn-primary:disabled {
   color: #fff;
@@ -6083,7 +6083,7 @@ button.bg-primary:focus {
 
 a.bg-secondary:hover, a.bg-secondary:focus,
 button.bg-secondary:hover,
-button.bg-secondary:focus {
+button.bg-secondary:ocus {
   background-color: #1a252f !important;
 }
 
@@ -6138,7 +6138,7 @@ button.bg-light:focus {
 }
 
 .bg-dark {
-  background-color: #343a40 !important;
+  background-color: #0E103E !important;
 }
 
 a.bg-dark:hover, a.bg-dark:focus,
