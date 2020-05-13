@@ -50,20 +50,21 @@
 
   <!-- Cards -->  
     <section id= "cards-section">
+      <div id="scene">
       <div class="container text-center" style="padding-top:50px">
         <h1 >Quello che so fare<span style="color:#FBC03E">.</span></h1>
         <div class= "row text-center">
-        <div class="col-12 col-md-4 col-lg-4">
-          <div class="cards">
-            <img class="img-fluid" style="padding: 30px" alt="img di card" src="img/Social-media-content.png">
-            <div class="card-body">
-              <h5>Content creation</h5>
-              <p>Lorem, ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur </p>
-            </div>
+          <div data-depth="0.2" class="col-12 col-md-4 col-lg-4">
+            <div class="cards">
+                <img class="img-fluid" style="padding: 30px" alt="img di card" src="img/Social-media-content.png">
+                <div class="card-body">
+                   <h5>Content creation</h5>
+                   <p>Lorem, ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur </p>
+             </div>
           </div>
         </div>
 
-        <div class="col-12 col-md-4 col-lg-4">
+        <div data-depth="0.6" class="col-12 col-md-4 col-lg-4">
           <div class="cards">
             <img class="img-fluid" style="padding: 30px" alt="img di card" src="img/Brand.png">
             <div class="card-body">
@@ -73,7 +74,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-md-4 col-lg-4">
+        <div data-depth="0.8" class="col-12 col-md-4 col-lg-4">
           <div class="cards">
             <img class="img-fluid" style="padding: 30px" alt="img di card" src="img/Ui:ux.png">
             <div class="card-body">
@@ -85,6 +86,7 @@
 
       </div>
       
+    </div>
 
     
     </section>
@@ -112,6 +114,11 @@
   <!-- Core theme JS-->
   <script src="js/scripts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
+  <script src="js/parallax.min.js.map"></script>
+  
+  
+  <script>var scene = document.getElementById('scene');</script>
+  <script>var parallaxInstance = new Parallax(scene);</script>
 
 
 </body>
