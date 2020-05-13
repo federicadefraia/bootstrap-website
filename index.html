@@ -32,31 +32,38 @@
   </nav>
 
    <!-- Masthead-->
+   
    <header class="masthead bg-primary text-white text-center">
-    <div class="container d-flex align-items-center flex-column">
-        <!-- Masthead Avatar Image--><img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="" /><!-- Masthead Heading-->
+    <div id="scene" class="container d-flex align-items-center flex-column">
+        <!-- Masthead Avatar Image-->
+        <div data-depth="0.5">
+        <img class="masthead-avatar mb-5" src="img/avataaars.svg" alt="" /><!-- Masthead Heading-->
         <h1 class="masthead-heading text-uppercase mb-0">Non so usare il JS</h1>
+     
         <!-- Icon Divider-->
-        <div class="divider-custom divider-light">
+        <div data-depth="0.2" class="divider-custom divider-light">
             <div class="divider-custom-line"></div>
             <div class="divider-custom-icon"><i class="fas fa-thumbs-down"></i></div>
             <div class="divider-custom-line"></div>
         </div>
         <!-- Masthead Subheading-->
         <p class="masthead-subheading font-weight-light mb-0">Non riesco - Non capisco - Mi innervosisco</p>
+      </div>
     </div>
 </header>
+
+
   
 
   <!-- Cards -->  
     <section id= "cards-section">
-      <div id="scene">
+      
       <div class="container text-center" style="padding-top:50px">
         <h1 >Quello che so fare<span style="color:#FBC03E">.</span></h1>
         <div class= "row text-center">
-          <div data-depth="0.2" class="col-12 col-md-4 col-lg-4">
-            <div class="cards">
-                <img class="img-fluid" style="padding: 30px" alt="img di card" src="img/Social-media-content.png">
+          <div class="col-12 col-md-4 col-lg-4">
+            <div class="cards rellax" data-rellax-speed="1">
+                <img class="img-fluid" style="padding: 50px" alt="img di card" src="img/Social-media-content.png">
                 <div class="card-body">
                    <h5>Content creation</h5>
                    <p>Lorem, ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur </p>
@@ -64,8 +71,8 @@
           </div>
         </div>
 
-        <div data-depth="0.6" class="col-12 col-md-4 col-lg-4">
-          <div class="cards">
+        <div class="col-12 col-md-4 col-lg-4">
+          <div class="cards rellax" data-rellax-speed="1">
             <img class="img-fluid" style="padding: 30px" alt="img di card" src="img/Brand.png">
             <div class="card-body">
               <h5>Brand identity</h5>
@@ -74,11 +81,11 @@
           </div>
         </div>
 
-        <div data-depth="0.8" class="col-12 col-md-4 col-lg-4">
-          <div class="cards">
+        <div class="col-12 col-md-4 col-lg-4">
+          <div class="cards rellax" data-rellax-speed="1">
             <img class="img-fluid" style="padding: 30px" alt="img di card" src="img/Ui:ux.png">
             <div class="card-body">
-              <h5>User interface</h5>
+              <h5>Brand identity</h5>
               <p>Lorem, ipsum dolor sit amet consectetur Lorem, ipsum dolor sit amet consectetur </p>
             </div>
           </div>
@@ -86,7 +93,7 @@
 
       </div>
       
-    </div>
+   
 
     
     </section>
@@ -115,11 +122,11 @@
   <script src="js/scripts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/parallax/3.1.0/parallax.min.js"></script>
   <script src="js/parallax.min.js.map"></script>
+  <script src="js/rellax.min.js"></script>
   
   
-  <script>var scene = document.getElementById('scene');</script>
-  <script>var parallaxInstance = new Parallax(scene);</script>
-
+  <script> var scene = document.getElementById('scene'); var parallaxInstance = new Parallax(scene);</script>
+ <script> var rellax = new Rellax('.rellax'); </script>
 
 </body>
 </html>
